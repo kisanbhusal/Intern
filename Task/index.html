@@ -1,0 +1,279 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div class="flex justify-between bg-indigo-900 px-8 py-1">
+        <p class="text-white p-2">Call Us : +977-9855060909</p>
+        <i class="ri-facebook-circle-fill text-3xl text-white "></i>
+    </div>
+
+    <span id="top"></span>
+    <a id="arrowIcon" class=" text-red-500 fixed right-5 bottom-10 p-2 rounded-lg z-50"><i class="ri-arrow-up-circle-line text-3xl"></i></a>
+    <!-- nav bar -->
+    <nav class="flex justify-between items-center px-16 z-50 shadow-lg py-2 sticky top-0 bg-gray-200 transition-all duration-1000 ease-in-out">
+        <img id="navLogo" src="http://cmsa.org.np/images/logo.png" alt="" class="h-24  px-auto">
+        <div>
+            <a class="mx-1 py-1 text-red-400 hover:text-blue-400 border-b hover:border-blue-400" href="index.html">Home</a>
+            <a class="mx-1 px-3 py-1 text-red-400 hover:text-blue-400 border-b hover:border-blue-400" href="#about">About us</a>
+            <a class="mx-1 px-3 py-1 text-red-400 hover:text-blue-400 border-b hover:border-blue-400" href="#services">Gallery</a>
+            <a class="mx-1 px-3 py-1 text-red-400 hover:text-blue-400 border-b hover:border-blue-400" href="#projects">Events</a>
+            <a class="mx-1 px-3 py-1 text-red-400 hover:text-blue-400 border-b hover:border-blue-400" href="">Contact Us</a>
+        </div>
+       <div>
+        <a href="" class="bg-red-500 text-lg text-white rounded px-5 py-2 hover:bg-blue-900"><i class="ri-heart-3-line"></i><span> Make donation</span></a>
+       </div>  
+    </nav>
+    <!-- end -->
+
+    <!-- SWIPER -->
+    <section id="swiperID">
+        <div class="swiper swiper2 ">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper ">
+                    <div class="swiper-slide relative ">
+                        
+                            <img src="http://cmsa.org.np/images/banners/nhh_1669901817.jpg" class=" h-[700px] w-full" alt=""> 
+                            <p class="absolute bottom-10 text-white border text-xl left-0 right-0 w-fit px-5 py-3 rounded-lg mx-auto">Chitwan Manav Sewa Ashram</p>  
+                        </div>
+                    
+                    <div class="swiper-slide relative ">
+                        
+                            <img src="http://cmsa.org.np/images/banners/IMG_7164_1669900974.jpg" class="h-[700px]  w-full" alt="">
+                            <p class="absolute bottom-10 text-white border text-xl left-0 right-0 w-fit px-5 py-3 rounded-lg mx-auto">Group Photo CMSA</p>       
+                    </div>       
+            </div>
+                <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- about us -->
+    <div class=" m-16 ">
+        <div class="grid grid-cols-2 gap-5">
+            <div>
+                <img src="http://cmsa.org.np/images/oldhand.jpg" class="h-[500px] ">
+            </div>
+
+            <div class="px-10">
+                <p class="text-3xl text-blue-500">About Us</p>
+                <p class="text-4xl mt-3">Human service is the best way of life</p>
+                <p class=" text-black text-xl text-justify mt-4 ">Chitwan Manav Sewa Ashram was established in 2072 B.S. (2015 A.D.) with a slogan "Human service is the best way of life". We are located at Bharatpur Chitwan. Chitwan Manav Sewa Ashram is taking care of oldage and differently-abled people. Every person is equal and have equal right. So, we started this organisation for taking care of needy ones.</p>
+
+                <div class="mt-20 ">
+                    <a href="" class="text-white rounded-lg px-10 py-4 mx-1 bg-red-500 hover:bg-blue-500 text-xl">View More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+
+    <!-- gallery -->
+    <section class=" m-16">
+        <div class="border-l-4 border-blue-900">
+            <p class="text-3xl px-2 text-indego-500">Gallery</p>
+            <p class="text-xl px-2">View our gallery photos at a glance</p>
+        </div>
+       <div class="mt-10">
+        <div class="grid grid-cols-3 gap-5">
+            <div>
+                <img src="http://cmsa.org.np/images/gallery/IMG_7168_1669901363.JPG" alt="">
+            </div>
+
+            <div>
+                <img src="http://cmsa.org.np/images/gallery/IMG_7193_1669901272.JPG" alt="">
+            </div>
+
+            <div>
+                <img src="http://cmsa.org.np/images/gallery/IMG_7166_1669901220.JPG" alt="">
+            </div>
+
+        </div>
+       </div>
+       <div class="mt-10 text-center">
+        <a href="" class="text-white rounded-lg px-10 py-4 mx-1 bg-red-500 hover:bg-blue-500 text-xl ">View All</a>
+    </div>
+
+    </section>
+    <!-- end -->
+
+    <!-- doing -->
+    <section class="m-16">
+        <div class="grid grid-cols-2 gap-10">
+            <div class="mt-28">
+                <p class="text-blue-700 text-3xl">Helping Today</p>
+                <h1 class="text-indego-500 text-5xl mt-5">What we are doing</h1>
+                <div class="flex text-justify">
+                    <p class="text-xl mt-8">We provide fooding, housing and medical care for our loved ones.We'll continue our service and give importance to the needy ones. This gives us a true happiness.</p>
+                </div>
+                <div class="mt-16">
+                    <a href="" class="text-red-500 rounded-lg px-10 py-4 mx-1 border border-red-400 hover:bg-red-500 hover:text-white text-xl">Join us Today</a>
+                </div>
+            </div>
+
+            <div>
+                <img src="http://cmsa.org.np/images/6.jpeg" alt="" class="w-full h-[700px]">
+            </div>
+
+        </div>
+
+    </section>
+    <!-- end -->
+
+    <!-- how we help -->
+    <section class="m-16">
+        <div class="text-center">
+            <p class="text-blue-700 text-2xl">Helping Today</p>
+            <h1 class="text-indego-500 text-5xl mt-1">How we help people</h1>
+        </div>
+        <div class="mt-12">
+            <div class="grid grid-cols-3 gap-10">
+                <div class="text-center bg-gray-100 p-10 shadow-lg rounded-lg">
+                    <div class="w-24 h-24 mx-auto bg-blue-600 text-white rounded-full">
+                        <img class="w-20 mx-auto" src="http://cmsa.org.np/images/icons8-lemon-64.png" alt="">
+                    </div>
+                    <p class="text-2xl text-indego-500">Healthy Food & Water</p>
+                    <p class="text-lg mt-3">Chitwan Manavsewa Asharam takes care of hygine, cleanliness and purity of everything. We provide fresh and healty foods and water in our organisation.</p>
+                </div>
+
+                <div class="text-center bg-gray-100 p-10 shadow-lg rounded-lg">
+                    <div class="w-24 h-24 mx-auto bg-blue-600 text-white rounded-full text-7xl flex items-center justify-center"><i class="ri-first-aid-kit-fill"></i>
+                    </div>
+                    <p class="text-2xl text-indego-500">Health & Medicine</p>
+                    <p class="text-lg mt-3">We take care of your health. We regulary check up the health from expert doctors and provide medicine if needed and recommended by the doctors.</p>
+                </div>
+
+                <div class="text-center bg-gray-100 p-10 shadow-lg rounded-lg">
+                    <div class="w-24 h-24 mx-auto bg-blue-600 text-white rounded-full flex items-center      justify-center text-7xl"><i class="ri-home-8-fill"></i>
+                    </div>
+                    <p class="text-2xl text-indego-500">Home</p>
+                    <p class="text-lg mt-3">We love to provide home for needy ones. Providing home will make us feel our organisation as our own home. We put our all effort to make you feel the Ashram as your own home.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- end -->
+
+
+
+    <footer >
+        <div class="mt-10">
+            <div class="grid grid-cols-4 gap-5 bg-indigo-900 p-16  justify-items-center">
+               
+                <div class="px-3 ">
+                    <img src="http://cmsa.org.np/images/logo.png" alt="" class="h-24  px-auto">
+                    <p class="text-justify text-white text-lg mt-4">Chitwan Manav Sewa Ashram is taking care of oldage and differently-abled people. </p>
+                   <div class="mt-8">
+                    <i class="ri-facebook-circle-fill text-3xl text-white "></i>
+                   </div>
+
+                </div>
+                <div>
+                    <p class="text-white font-bold text-2xl">Quick Links</p><br>
+                    <a href="index.html" class="text-gray-300 ">Home</a>
+                    <a href="" class="text-gray-300 block mt-3">About Us</a>
+                    <a href="#services" class="text-gray-300 block mt-3">Gallery</a>
+                    <a href="" class="text-gray-300 block mt-3">Events</a>
+                    <a href="contact.html" class="text-gray-300 block mt-3">Contact Us</a>
+                </div>
+                <div>
+                    <p class="text-white font-bold text-2xl">Contact Us</p><br>
+                    <span class="text-gray-300 "><i class="ri-map-pin-fill"></i> Bharatpur-09, Chitwan</span>
+                    <span class=" text-gray-300 block mt-3"><i class="ri-phone-fill"></i>+977-9855060909</span>
+                    <span class=" text-gray-300 block mt-3"><i class="ri-mail-download-fill"></i> chitwanmanavsewa@gmail.com</span>
+                </div>
+                <div>
+                    <p class="text-white font-bold text-2xl">Support</p><br>
+                    <p class="text-white text-lg">Get in touch with us if you wish to help the needy ones.</p>
+                    <div class="mt-10">
+                        <a href="" class="text-white rounded-lg px-10 py-4  bg-red-500 hover:bg-blue-500 text-xl ">Join Us Today</a>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <div class=" flex justify-center py-2 bg-blue-500">
+           <p>Copyright&copy 2023 <spam class="text-white">Bitmapitsolution Pvt.Ltd.</spam>All Rights Reserveds </p>
+        </div>
+    </footer>
+
+    <script>
+           
+        var topbtn = document.getElementById('arrowIcon');
+            topbtn.style.display = 'none';
+
+            window.addEventListener('scroll', function(){
+
+                if(scrollY > 200){
+                topbtn.style.display = 'block';
+                }
+                else
+                {
+                topbtn.style.display = 'none';
+                }
+
+            });
+
+
+
+
+        topbtn.addEventListener('click' , function(){
+
+            // window.scroll({top:0});
+            window.scrollTo({
+                behavior:"smooth",
+                top:0,
+                
+            });
+
+        });
+
+
+
+        // Reduce size of navbar when below swiper
+        window.addEventListener('scroll', function() {
+            var navbar = document.querySelector('nav');
+            var swiperSection = document.getElementById('swiperID');
+            var navLogo = document.getElementById('navLogo');
+            
+            if (window.scrollY > swiperSection.offsetTop - navbar.offsetHeight) {
+                navbar.classList.remove('py-2'); // Reset default padding top and bottom
+                navbar.classList.add('py-1'); // Adjust this value to your desired padding
+                navLogo.classList.remove('h-24');
+                navLogo.classList.add('h-16');
+            } else {
+                navbar.classList.remove('py-1'); // Reset adjusted padding top and bottom
+                navbar.classList.add('py-2'); // Default padding top and bottom
+                navLogo.classList.remove('h-16');
+                navLogo.classList.add('h-24');
+            }
+        });
+
+
+    </script>
+     <!-- swiper -->
+    <script>
+        const swiper2 = new Swiper('.swiper2', {
+    // Optional parameters
+    loop: true,
+    autoplay: true,
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    });
+</script>
+
+</body>
+</html>
