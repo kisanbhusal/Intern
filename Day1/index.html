@@ -7,22 +7,40 @@
     <script src="https://cdn.tailwindcss.com"></script>
     
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
+    <!-- cancle button -->
+    <!-- <div id="popup" class="fixed bg-blue-600 bottom-0 right-0 left-0 top-0 flex items-center backdrop-blur-md z-20 bg-blue-600 bg-opacity-40">
+        <div class="w-4/12 mx-auto relative">
+            
+            <i class="ri-close-circle-line text-2xl absolute -right-5 -top-5 px-0.5 rounded-lg bg-red-700 text-white cursor-pointer" id="closebtn"></i>
+            <img src="https://bitmapitsolution.com/images/modal_images/Untitled-1_1672117600.png" alt="">
+        </div>
+        
+    </div> -->
+    <!-- <i class="ri-close-circle-line text-2xl absolute right-14 top-14  rounded-lg bg-white text-red-700"></i> -->
     <span id="top"></span>
-    <a href="#top" class="bg-red-900 text-blue-400 fixed right-5 bottom-10 p-2 rounded-lg"><i class="ri-arrow-up-circle-line text-2xl"></i></a>
-    <nav class="flex justify-between items-center px-10  shadow-lg py-2 sticky top-0 bg-gray-200">
+    <a id="arrowIcon" href="#top" class=" text-blue-400 fixed right-5 bottom-10 p-2 rounded-lg z-50"><i class="ri-arrow-up-circle-line text-3xl"></i></a>
+
+    <!-- nav bar -->
+    <nav class="flex justify-between items-center px-1 z-50 shadow-lg py-2 sticky top-0 bg-gray-200">
         <img src="https://www.bitmapitsolution.com/images/logo/logo.png" alt="" class="h-12">
         <div>
-            <a class="mx-1 text-red-400 hover:text-blue-400" href="">Home</a>
-            <a class="mx-1 text-red-400 hover:text-blue-400" href="">About us</a>
-            <a class="mx-1 text-red-400 hover:text-blue-400" href="">Services</a>
-            <a class="mx-1 text-red-400 hover:text-blue-400" href="">Projects</a>
-            <a class="mx-1 text-red-400 hover:text-blue-400" href="">Blogs</a>
-            <a class="mx-1 text-red-400 hover:text-blue-400" href="">Contact Us</a>
+            <a class="mx-1 py-1 text-red-400 hover:text-blue-400 border-b hover:border-blue-400" href="index.html">Home</a>
+            <a class="mx-1  py-1 text-red-400 hover:text-blue-400 border-b hover:border-blue-400" href="#about">About us</a>
+            <a class="mx-1  py-1 text-red-400 hover:text-blue-400 border-b hover:border-blue-400" href="#services">Services</a>
+            <a class="mx-1  py-1 text-red-400 hover:text-blue-400 border-b hover:border-blue-400" href="#projects">Projects</a>
+            <a class="mx-1  py-1 text-red-400 hover:text-blue-400 border-b  hover:border-blue-400" href="#blogs">Blogs</a>
+            <a class="mx-1  py-1 text-red-400 hover:text-blue-400 border-b hover:border-blue-400" href="contact.html">Contact Us</a>
         </div>
-        <a href="" class="bg-blue-300 rounded-lg px-2 hover:bg-indigo-300">Get IT Support</a>
-
+       <div>
+        <!-- <a href="" class="bg-blue-300 rounded-lg  hover:bg-indigo-300">Get IT Support</a> -->
+        <a href="login.html"><span class=" rounded-lg text-lg bg-green-500 hover:bg-indigo-300 px-2">Login<i class="ri-login-circle-line"></i></span></a>
+       </div>
+        
     </nav>
     <div class="grid grid-cols-2 gap-10 bg-indigo-900 pb-44 px-20 py-10 items-center " >
         <div>
@@ -31,15 +49,16 @@
                 LET THE WORLD KNOW YOU EXIST</p>
                 <div class="mt-10">
                     <a href="" class="text-white rounded-lg px-20 py-4 mx-1 bg-red-300 hover:bg-blue-500 text-2xl">About Us</a>
-                    <a href="" class="text-white rounded-lg px-20 py-4 mx-1 bg-gray-500 hover:bg-green-500 text-2xl">Contact Us</a>
+                    <a href="contact.html" class="text-white rounded-lg px-20 py-4 mx-1 bg-gray-500 hover:bg-green-500 text-2xl">Contact Us</a>
                 </div>
         </div>
         <div class="w-8/12 ml-auto mr-10"><img src="https://www.bitmapitsolution.com/images/home.png" alt=""></div>
     </div>
     
-        <img src="https://www.bitmapitsolution.com/images/home_bottom_shape.png" alt="" class="-mt-52 w-full h-56">
-    <!-- service -->
-        <section class="py-20">
+        <img src="https://www.bitmapitsolution.com/images/home_bottom_shape.png" alt="" class="-mt-52 w-full h-56" >
+
+        <!-- service -->
+        <section class="py-20" id="services">
             <h1 class="text-4xl text-center text-indigo-900">Services</h1>
             <p class="text-md text-center text-blue-500 mt-4" >We provide the following Services as per the need of the clients.</p>
             <div class="grid grid-cols-3 px-24 gap-10 mt-2">
@@ -168,9 +187,53 @@
 
             </div>
         
-           </section>
-           <!-- Team member -->
-    <section class="my-20">
+        </section>
+
+        <!-- testimonials -->
+        <section class="bg-indigo-900 p-10">
+            <div class="flex text-center justify-center mt-auto">
+               <div>
+                <h1 class="text-white text-3xl">Testimonials</h1>
+                <p class="mt-1 text-white">what our Client Say</p>
+               </div>
+            </div>
+                <div class="swiper swiper1">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide flex text-center justify-center">
+                           
+                                <div class="py-10">
+                                    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" class="rounded-full h-32 w-32 mx-auto" alt="">
+                                    <p class="text-white text-2xl mt-2">Kisan Bhusal</p>
+                                    <p class="text-white mt-1">Founder Of V-Group</p>
+                                    <p class=" text-white w-7/12 flex text-center justify-center mx-auto mt-4 ">Its been wounderfull working with BITS IT solution.They have the best teams around who continously focus on developing the websites required as per client requiremement. Its been wounderfull working with BITS IT solution.They have the best teams around who continously focus on developing the websites required as per client requiremement.</p>
+                                </div>
+                           
+                            </div> 
+                                <div class="swiper-slide flex text-center justify-center"> 
+                                    <div class="py-10">
+                                    <img src="https://cdn.pixabay.com/photo/2013/10/02/23/03/mountains-190055_1280.jpg" class="rounded-full h-32 w-32 mx-auto" alt="">
+                                    <p class="text-white text-2xl mt-2">Kisan Bhusal</p>
+                                    <p class="text-white mt-1 items-center">Founder Of V-Group</p>
+                                    <p class=" text-white w-7/12 flex text-center justify-center mx-auto mt-4 ">Its been wounderfull working with BITS IT solution.They have the best teams around who continously focus on developing the websites required as per client requiremement.Its been wounderfull working with BITS IT solution.They have the best teams around who continously focus on developing the websites required as per client requiremement.</p>
+                                </div>
+                            </div>
+                        <div class="swiper-slide flex text-center justify-center">
+                            <div class="py-10">
+                                <img src="https://i.pinimg.com/736x/b1/dc/9f/b1dc9fdddd098742ac7dd3c07eed8efa.jpg" class="rounded-full h-32 w-32 mx-auto" alt="">
+                                <p class="text-white text-2xl mt-2">Kisan Bhusal</p>
+                                <p class="text-white mt-1">Founder Of V-Group</p>
+                                <p class="text-white w-7/12 flex text-center justify-center mx-auto mt-4  ">Its been wounderfull working with BITS IT solution.They have the best teams around who continously focus on developing the websites required as per client requiremement.Its been wounderfull working with BITS IT solution.They have the best teams around who continously focus on developing the websites required as per client requiremement.</p>
+                            </div>
+                        </div>
+                    </div>
+                          <div class="swiper-pagination"></div>
+                </div>
+        </section>
+        <!-- Slider main container -->
+      
+        <!-- Team member -->
+        <section class="my-20">
         <h1 class="text-3xl text-center text-indigo-900" >Team Member</h1>
         <p class="text-md text-center text-red-900">The faces behind the success of Bitmap I.T.solution Pvt.Ltd</p><br>
         <div class="grid grid-cols-3 gap-10 px-24 ">
@@ -217,64 +280,132 @@
        <!-- <h1 class="text-blue-400 text-center bg-red-200 shadow text-4xl">This is a heading</h1> -->
        <br>
        <div class="text-center py-8  rounded-lg">
-           <button class="bg-blue-500 p-2 px-4 ml-2 shadow-lg rounded hover:bg-red-500 transition-all duration-700 text-white h-12">View All Blogs</button>
+           <button class="bg-blue-500 p-2 px-4 ml-2 shadow-lg rounded hover:bg-red-500 transition-all duration-700 text-white h-12">View All Members</button>
        </div><br><br>
-   </section>
-   <!-- Blogs -->
-    <section class="my-20">
-     <h1 class="text-3xl text-center text-indigo-900" >Blogs & Articles</h1>
-     <p class="text-2xl text-center text-red-900">Recent Blog</p>
-     <div class="grid grid-cols-3 gap-10 px-24 ">
-        <div class=" shadow-lg rounded-lg bg-gray-300">
-            <img src="http://www.shadowsphotography.co/wp-content/uploads/2017/12/photography-01-800x400.jpg" alt="" class=" rounded-t-lg width-100">
-            <div class="flex justify-between px-4 text-indigo-900">
-             <p>2023-12-12</p>
-             <p>Bitmap I.T. Solution</p>
+        </section>
+
+        <!-- Background Image -->
+            <section class="bg-[url('https://media.istockphoto.com/id/1351571961/photo/looking-directly-up-at-the-skyline-of-the-financial-district-in-central-london.webp?b=1&s=170667a&w=0&k=20&c=ScoPcmVztzvi771qPgGSvhA50WDt7gOM7361Ei0ODww=')] h-96 bg-cover bg-fixed  relative">
+            <div class="text-center bg-blue-700 bg-opacity-30 text-white flex items-center justify-center absolute left-0 top-0 right-0 bottom-0">
+                <div>
+                    <p>Want to work with us?</p>
+                    <h1 class="uppercase text-3xl font-bold">let the world know you exist!</h1>
+                    <h1 class="w-8/12 mx-auto">Digitalise your business with attractive graphics, grow the customers and business. Get all IT related services and shift from the traditional way of business marketing to the new digital technology.</h1>
+                    <div class="mt-10">
+                    <a href="" class="text-white rounded-lg px-20 py-3 mx-1 bg-red-300 hover:bg-blue-500 text-xl ">About Us</a>
+                    <a href="" class="text-white rounded-lg px-20 py-3 mx-1 bg-gray-500 hover:bg-green-500 text-xl ">Find Us</a>
+                </div>
+                </div>
             </div>
-            <div class="px-4">
-                <h2 class="font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. </h2>
-                <p class="text-blue-400 text-justify text-sm line-clamp-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, sequi odio? Ipsam distinctio earum nihil voluptatem pariatur, ex eum iusto mollitia ratione adipisci, deleniti odit. Facilis quos earum accusamus atque...</p>
-                <a href="" class="block mt-4 font-bold">read more</a>
-            </div>
+            </section>
+
+        <!-- Blogs -->
+            <section id="blogs" class="mt-20">
+            <h1 class="text-3xl text-center text-indigo-900" >Blogs & Articles</h1>
+            <p class="text-2xl text-center text-red-900">Recent Blog</p>
+            <div class="grid grid-cols-3 gap-10 px-24 ">
+                <div class=" shadow-lg rounded-lg bg-gray-300">
+                    <img src="http://www.shadowsphotography.co/wp-content/uploads/2017/12/photography-01-800x400.jpg" alt="" class=" rounded-t-lg width-100">
+                    <div class="flex justify-between px-4 text-indigo-900">
+                    <p>2023-12-12</p>
+                    <p>Bitmap I.T. Solution</p>
+                    </div>
+                    <div class="px-4">
+                        <h2 class="font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. </h2>
+                        <p class="text-blue-400 text-justify text-sm line-clamp-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, sequi odio? Ipsam distinctio earum nihil voluptatem pariatur, ex eum iusto mollitia ratione adipisci, deleniti odit. Facilis quos earum accusamus atque...</p>
+                        <a href="" class="block mt-4 font-bold">read more</a>
+                    </div>
+                </div>
+            
+                <div class=" shadow-lg bg-gray-300 rounded-lg">
+                    <img src="http://www.shadowsphotography.co/wp-content/uploads/2017/12/photography-01-800x400.jpg" alt="" class=" rounded-t-lg width-100">
+                    <div class="flex justify-between px-4 text-indigo-900">
+                    <p>2023-12-12</p>
+                    <p>Bitmap I.T. Solution</p>
+                    </div>
+                    <div class="px-4">
+                        <h2 class="font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. </h2>
+                        <p class="text-blue-400 text-justify text-sm line-clamp-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, sequi odio? Ipsam distinctio earum nihil voluptatem pariatur, ex eum iusto mollitia ratione adipisci, deleniti odit. Facilis quos earum accusamus atque.</p>
+                        <a href="" class="block mt-4 font-bold">read more</a>
+                    </div>
+                </div>
+                <div class=" shadow-lg bg-gray-300 rounded-lg">
+                    <img src="http://www.shadowsphotography.co/wp-content/uploads/2017/12/photography-01-800x400.jpg" alt="" class=" rounded-t-lg width-100">
+                    <div class="flex justify-between px-4 text-indigo-900">
+                    <p>2023-12-12</p>
+                    <p>Bitmap I.T. Solution</p>
+                    </div>
+                    <div class="px-4">
+                        <h2 class="font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. </h2>
+                        <p class="text-blue-400 text-justify text-sm line-clamp-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, sequi odio? Ipsam distinctio earum nihil voluptatem pariatur, ex eum iusto mollitia ratione adipisci, deleniti odit. Facilis quos earum accusamus atque.</p>
+                        <a href="" class="block mt-4 font-bold">Read more</a>
+                    </div>
+                </div>
+            
+            </div><br>
+            
+            <!-- <h1 class="text-blue-400 text-center bg-red-200 shadow text-4xl">This is a heading</h1> -->
+            <br>
+            <div class="text-center pt-8  rounded-lg">
+                <button class="bg-blue-500 p-2 px-4 ml-2 shadow-lg rounded hover:bg-red-500 transition-all duration-700 text-white h-12">View All Blogs</button>
+            </div><br><br>
+            </section>
+
+       <!-- Happy Clients -->
+       <section class="">
+        <div class="flex text-center justify-center mt-auto">
+           <div>
+            <h1 class="text-indego-500 text-3xl">Our Happy Clients</h1>
+            <p class="mt-1 text-red-300">We are glad to be trusted by</p>
+           </div>
         </div>
-       
-        <div class=" shadow-lg bg-gray-300 rounded-lg">
-            <img src="http://www.shadowsphotography.co/wp-content/uploads/2017/12/photography-01-800x400.jpg" alt="" class=" rounded-t-lg width-100">
-            <div class="flex justify-between px-4 text-indigo-900">
-             <p>2023-12-12</p>
-             <p>Bitmap I.T. Solution</p>
+        <div class="swiper swiper2 py-10">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper ">
+                    <div class="swiper-slide ">
+                        <div class="py-5 px-2 border shadow  rounded-lg ">
+                            <img src="https://www.bitmapitsolution.com/images/client_images/CCHM_1670568480.png" class=" h-32  mx-auto" alt="">   
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="py-5 px-2 border shadow rounded-lg">
+                            <img src="https://www.bitmapitsolution.com/images/client_images/Cima%20CA_1670568628.png" class=" h-32  mx-auto" alt="">   
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="py-5 px-2 border shadow rounded-lg">
+                            <img src="https://www.bitmapitsolution.com/images/client_images/HAmro_1670568769.png" class=" h-32  mx-auto" alt="">   
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="py-5 px-2 border shadow rounded-lg">
+                            <img src="https://www.bitmapitsolution.com/images/client_images/KMP_1670568828.png" class=" h-32  mx-auto" alt="">   
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="py-5 px-2 border shadow rounded-lg">
+                            <img src="https://www.bitmapitsolution.com/images/client_images/VDRC_1670568896.png" class=" h-32  mx-auto" alt="">   
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="py-5 px-2 border shadow rounded-lg">
+                            <img src="https://www.bitmapitsolution.com/images/client_images/Wood_1670569045.png" class=" h-32  mx-auto" alt="">   
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="py-5 px-2 border shadow rounded-lg">
+                            <img src="https://www.bitmapitsolution.com/images/client_images/Suresh%20logo_1670569136.png" class=" h-32  mx-auto" alt="">   
+                        </div>
+                    </div>
             </div>
-            <div class="px-4">
-                <h2 class="font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. </h2>
-                <p class="text-blue-400 text-justify text-sm line-clamp-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, sequi odio? Ipsam distinctio earum nihil voluptatem pariatur, ex eum iusto mollitia ratione adipisci, deleniti odit. Facilis quos earum accusamus atque.</p>
-                <a href="" class="block mt-4 font-bold">read more</a>
-            </div>
+                <div class="swiper-pagination"></div>
         </div>
-        <div class=" shadow-lg bg-gray-300 rounded-lg">
-            <img src="http://www.shadowsphotography.co/wp-content/uploads/2017/12/photography-01-800x400.jpg" alt="" class=" rounded-t-lg width-100">
-            <div class="flex justify-between px-4 text-indigo-900">
-             <p>2023-12-12</p>
-             <p>Bitmap I.T. Solution</p>
-            </div>
-            <div class="px-4">
-                <h2 class="font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. </h2>
-                <p class="text-blue-400 text-justify text-sm line-clamp-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, sequi odio? Ipsam distinctio earum nihil voluptatem pariatur, ex eum iusto mollitia ratione adipisci, deleniti odit. Facilis quos earum accusamus atque.</p>
-                <a href="" class="block mt-4 font-bold">Read more</a>
-            </div>
-        </div>
-       
-     </div><br>
-    
-    <!-- <h1 class="text-blue-400 text-center bg-red-200 shadow text-4xl">This is a heading</h1> -->
-    <br>
-    <div class="text-center py-8  rounded-lg">
-        <button class="bg-blue-500 p-2 px-4 ml-2 shadow-lg rounded hover:bg-red-500 transition-all duration-700 text-white h-12">View All Blogs</button>
-    </div><br><br>
-</section>
-    <!-- day3 -->
+       </section>
+
+      <!-- day3 -->
 
     <footer >
-        <div class="mt-3">
+        <div class="">
             <div class="grid grid-cols-4 gap-5 bg-indigo-900 p-16  justify-items-center">
                
                 <div class="px-3 ">
@@ -283,12 +414,12 @@
                 </div>
                 <div>
                     <p class="text-white font-bold text-xl">USEFUL LINKS</p><br>
-                    <a href="" class="text-gray-300 ">Home</a>
+                    <a href="index.html" class="text-gray-300 ">Home</a>
                     <a href="" class="text-gray-300 block mt-3">About Us</a>
-                    <a href="" class="text-gray-300 block mt-3">Services</a>
+                    <a href="#services" class="text-gray-300 block mt-3">Services</a>
                     <a href="" class="text-gray-300 block mt-3">Projects</a>
                     <a href="" class="text-gray-300 block mt-3">Blogs</a>
-                    <a href="" class="text-gray-300 block mt-3">Contact Us</a>
+                    <a href="contact.html" class="text-gray-300 block mt-3">Contact Us</a>
                 </div>
                 <div>
                     <p class="text-white font-bold text-xl">CONTACT US</p><br>
@@ -302,15 +433,91 @@
                         <img src="https://scontent.fktm16-1.fna.fbcdn.net/v/t39.30808-6/329325615_461583402716348_8604227531458289015_n.png?stp=dst-png_p480x480&_nc_cat=109&ccb=1-7&_nc_sid=3635dc&_nc_ohc=SG-BUQIv0m8AX8fiJ7o&_nc_ht=scontent.fktm16-1.fna&oh=00_AfAuEREyRMro7pSVmzTDLP7ZSiExyJ3QebGwiP_XJkORcw&oe=6578F215" alt="">
                       </a> -->
                       <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fbitmapitsolution%3Fref%3Dembed_page&tabs=timeline&width=300&height=250&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-                </div>
-
-               
+                </div>   
             </div>
-
         </div>
-    <div class=" flex justify-center py-2 bg-blue-500">
-        <p>Copyright&copy 2023 <spam class="text-white">Bitmapitsolution Pvt.Ltd.</spam>All Rights Reserveds </p>
+        <div class=" flex justify-center py-2 bg-blue-500">
+           <p>Copyright&copy 2023 <spam class="text-white">Bitmapitsolution Pvt.Ltd.</spam>All Rights Reserveds </p>
         </div>
     </footer>
+        <!-- swiper1 -->
+            <script>
+                    const swiper = new Swiper('.swiper1', {
+                // Optional parameters
+                loop: true,
+                autoplay: true,
+                
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                });
+            </script>
+
+            <!-- swipper2 -->
+            <script>
+                const swiper2 = new Swiper('.swiper2', {
+            // Optional parameters
+            loop: true,
+            autoplay: true,
+            slidesPerView: 5,
+            spaceBetween: 30,
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            });
+        </script>
+
+         <!-- arrow scroll -->
+            <script>
+           
+            var topbtn = document.getElementById('arrowIcon');
+                topbtn.style.display = 'none';
+
+                window.addEventListener('scroll', function(){
+
+                    if(scrollY > 200){
+                    topbtn.style.display = 'block';
+                    }
+                    else
+                    {
+                    topbtn.style.display = 'none';
+                    }
+
+                });
+
+            // window.onscroll = function() {
+            //   scrollFunction();
+            // }
+
+            // function scrollFunction() {
+            //   if(window.pageYOffset > 200)
+            //   {
+            //     topbtn.style.display = 'block';
+            //   }  
+            //   else
+            //   {
+            //     topbtn.style.display = 'none';
+            //   }
+            // }
+
+            topbtn.addEventListener('click' , function(){
+
+                // window.scroll({top:0});
+                window.scrollTo(0,0);
+
+            });
+        </script>
+        
+         <!-- close button -->
+            <script>
+                varclosebtn = document.getElementById('closebtn');
+                closebtn.addEventListener('click',function(){
+                    document.getElementById('popup').style.display='none';
+                } );  
+            </script>
 </body>
 </html>
